@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorpresa Interactiva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💖 Hola mi amor 💖</h1>
+        <p>Hacé clic en cada imagen para descubrir un mensaje</p>
+        <div class="playground">
+            <img src="img/billie.png" class="floating" data-message="Tus abrazos me dan paz, como la que sentís al escuchar a Billie 💚">
+            <img src="img/coraline.png" class="floating" data-message="Te daría la llave de todos mis mundos 🔑">
+            <img src="img/harry.png" class="floating" data-message="You're my golden 🌞">
+            <img src="img/basketball.png" class="floating" data-message="Sos buena en la cancha, pero en mi corazón la mejor 🏀">
+            <img src="img/plant.png" class="floating" data-message="Quiero cuidarte tanto como vos lo hacés con tus plantitas 🌱">
+        </div>
+        <div id="modal" class="modal hide">
+            <div class="modal-content">
+                <p id="message-text"></p>
+                <button onclick="hideMessage()" class="btn">Cerrar</button>
+            </div>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
